@@ -1,11 +1,12 @@
 # MathQuill
 
 ## Install
+`mathquill-node` need `jquery`
 ```bash
-npm i mathquill-node --save
+npm i jquery mathquill-node --save
 ```
 ```bash
-yarn add mathquill-node
+yarn add jquery mathquill-node
 ```
 
 ## Usage
