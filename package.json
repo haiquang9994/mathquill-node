@@ -1,0 +1,26 @@
+{
+    "name": "mathquill-node",
+    "version": "1.0.0",
+    "description": "mathquill-node",
+    "main": "./lib/index.js",
+    "types": "./lib/index.d.ts",
+    "files": [
+        "lib"
+    ],
+    "keywords": [
+        "mathquill",
+        "mathquill-node"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/haiquang9994/mathquill-node"
+    },
+    "homepage": "https://github.com/haiquang9994/mathquill-node",
+    "author": {
+        "name": "@haiquang9994"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "jquery": "^3.6.0"
+    }
+}
