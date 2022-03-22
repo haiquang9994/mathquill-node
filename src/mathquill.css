@@ -424,31 +424,42 @@
 }
 .mq-math-mode .mq-xrightarrow {
   display: inline-flex;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
   align-items: center;
-  padding: 0 0.22em;
+  padding: 0 0.3em;
+}
+.mq-math-mode .mq-xrightarrow .mq-xrightarrow-left {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 1em;
 }
 .mq-math-mode .mq-xrightarrow .mq-xrightarrow-right {
+  margin-left: 0.3rem;
+}
+.mq-math-mode .mq-xrightarrow .mq-xrightarrow-arrow-right {
   width: 100%;
-  min-width: 1.2em;
+  min-width: 0.2em;
   height: 0.452em;
   overflow: hidden;
-  top: 50%;
+  bottom: 0.2em;
   position: absolute;
-  transform: translateY(-50%);
 }
 .mq-math-mode .mq-xrightarrow .mq-xrightarrow-text {
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 .mq-math-mode .mq-xrightarrow .mq-xrightarrow-text.mq-empty {
   min-width: 0.8em;
 }
 .mq-math-mode .mq-xrightarrow .mq-xrightarrow-text.top {
-  margin-bottom: 0.18rem;
+  font-size: 0.8rem;
+  position: relative;
+  top: -1em;
 }
 .mq-math-mode .mq-xrightarrow .mq-xrightarrow-text.bottom {
-  margin-top: 0.18rem;
+  position: relative;
+  top: -0.1em;
 }
 .mq-math-mode .mq-xrightarrow svg {
   width: 100%;
@@ -485,24 +496,35 @@
 .mq-math-mode .mq-matrix.mq-matrix-array.mq-matrix-array-right td {
   text-align: right;
 }
-.mq-math-mode .mq-overunder {
-  text-align: center;
-  text-align: -webkit-center;
+
+.mq-math-mode .mq-overset {
   position: relative;
-  top: 0.01em;
+  padding: 0 0.3em;
 }
-.mq-math-mode .mq-overunder .mq-font {
-  font-family: inherit;
-}
-.mq-math-mode .mq-overunder.mq-underset {
-  vertical-align: text-top;
-}
-.mq-math-mode .mq-overunder.mq-underset .mq-under,
-.mq-math-mode .mq-overunder.mq-overset .mq-over {
+.mq-math-mode .mq-overset .mq-over {
   display: block;
   font-size: 1.2em;
   line-height: 0.3em;
+  position: absolute;
+  top: -0.6em;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
+.mq-math-mode .mq-underset {
+  position: relative;
+  padding: 0 0.3em;
+}
+.mq-math-mode .mq-underset .mq-under {
+  display: block;
+  font-size: 1.2em;
+  line-height: 0.3em;
+  position: absolute;
+  bottom: -0.6em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .mq-math-mode .mq-square {
   padding: 0.45rem;
   border: 1px solid;
