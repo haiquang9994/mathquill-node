@@ -5338,7 +5338,6 @@ function MathQuill___() {
     );
 
     LatexCmds.uxparallelogram = bind(VanillaSymbol, "\\lower.1em{\\Large\\unicode{x25B1}}", "&#9649;");
-    LatexCmds["tilde"] = bind(VanillaSymbol, "\\lower.1em{\\Large\\unicode{x007E}}", "&#8764;");
 
     //spacing
     LatexCmds.quad = LatexCmds.emsp = bind(VanillaSymbol, "\\quad ", "    ");
@@ -6103,6 +6102,9 @@ function MathQuill___() {
         })(key, MQ1[key]);
 
     BindCmds["\\uxparallelogram"] = "\\lower.1em{\\Large\\unicode{x25B1}}";
+    BindCmds["\\notni"] = "\\not\\ni";
+    BindCmds["\\notsubseteq"] = "\\not\\subseteq";
+    BindCmds["\\notsubset"] = "\\not\\subset";
     BindCmds["\\Q"] = "\\mathbb{Q}";
     BindCmds["\\W"] = "\\mathbb{W}";
     BindCmds["\\Z"] = "\\mathbb{Z}";
